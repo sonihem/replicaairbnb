@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day3.css" class="rel">
+<style>
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.outer {
+    height: 155px;
+
+}
+
+ul.list-item {
+    list-style: none;
+    display: flex;
+    transform: translate(0px, -16px);
+}
+
+.list-item {
+    justify-content: center;
+}
+
+.list-item li {
+    height: 20px;
+    white-space: nowrap;
+
+    margin-top: -72px;
+    text-align: center;
+    font-size: 20px;
+    padding: 11px 11px;
+}
+
+
+
+
+
+.btns {
+    width: 7%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    transform: translate(1521px, -157px);
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+
+
+.icons {
+    display: flex;
+    height: 61px;
+}
+
+img.icon1 {
+    height: 30px;
+    margin: 9px 17px;
+    transform: translate(14px, 10px);
+}
+
+
+.hs {
+    padding: 9px 4px;
+    width: 36%;
+    border-radius: 42px;
+    margin-left: 488px;
+    transform: translate(158px, -41px);
+    border: 1px solid gray;
+    height: 38px;
+}
+
+.boxsg {
+    display: flex;
+
+    text-align: center;
+}
+
+.subbox1 {
+
+    width: 168px;
+    text-align: center;
+}
+
+
+.logos {
+    height: 57px;
+    /* width: 11%; */
+    /* background: red; */
+    margin: 15px;
+    margin-left: 95px;
+}
+
+
+.flexparent {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.flexitem {
+    width: 260px;
+    padding: 20px 13px;
+    border-radius: 14px;
+}
+
+.flexitem .img {
+
+    width: 100%;
+    border-radius: 13px;
+}
+
+.btn {
+    position: relative;
+}
+
+.btn .live {
+    height: 31px;
+    width: 27%;
+    background-color: #175b97;
+    border-radius: 18px;
+    position: absolute;
+    bottom: 108px;
+    border: none;
+    margin: 10px;
+    color: white;
+}
+
+svg.bi.bi-upload {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 29px;
+    height: 30px;
+    bottom: 120px;
+    position: absolute;
+    right: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+    /* font-size: 19px; */
+}
+
+.icon {
+    position: relative;
+}
+
+.text h4 {
+    transform: translate(0px, -6px);
+
+}
+
+.text p {
+    transform: translate(0px, -20px);
+}
+
+.twoflex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.twoflex-container1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translate(-6px, -64px);
+}
+
+
+.twoflex-container2 {
+    display: flex;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.heads {
+    font-size: 25px;
+    padding-left: 38px;
+    padding-top: -11px;
+    transform: translate(7px, -31px);
+}
+
+.words {
+    text-align: center;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.iic img {
+    height: 25px;
+
+}
+
+.iic:hover {
+    border-bottom: 2px solid gray;
+
+}
+
+.iconns {
+    padding: 5px 53px;
+    display: flex;
+    gap: 57px;
+}
+
+
+
+
+.footer {
+    background-color: #ededed;
+
+}
+
+.foot-text {
+    padding: 0 387px;
+    transform: translate(0px, -41px);
+}
+
+.foot-text ul {
+    list-style: none;
+    display: flex;
+}
+
+
+.foot-text li {
+
+    padding: 10px;
+    width: 6%;
+    text-align: center;
+
+}
+
+.hed h2 {
+
+    padding-left: 51px 133px;
+    padding: 39px 444px;
+}
+
+
+
+
+.airb1 {
+    font-size: 15px;
+    white-space: nowrap;
+    color: gray;
+    grid-template-columns: subgrid;
+}
+
+
+
+.foot-text1 {
+    padding: 0 387px;
+    transform: translate(0px, -41px);
+}
+
+.foot-text1 ul {
+    list-style: none;
+    display: flex;
+}
+
+
+.foot-text1 li {
+    padding: 10px 38px;
+    width: 6%;
+    text-align: center;
+    transform: translate(-25px, 4px);
+}
+
+
+.support {
+
+    padding: 60px;
+}
+
+.support ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.support ul li {
+
+    margin-bottom: 10px;
+}
+
+.last-fot {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+.foot-last {
+    padding: 0px 359px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+@media (max-width: 609px) {
+    .twoflex-container2 {
+
+        justify-content: center;
+
+
+    }
+
+    .support {
+
+        padding: 25px;
+    }
+
+
+    .hs {
+        width: 91%;
+        margin-left: 0px;
+        height: 30px;
+        transform: translate(18px, -36px);
+        padding: 9px 9px;
+
+    }
+
+    .logos {
+        height: 47px;
+
+        margin: 15px;
+
+    }
+
+    svg.bi.bi-upload {
+
+        bottom: 197px;
+
+    }
+
+    .btn .live {
+
+        bottom: 192px;
+
+    }
+
+    .flexitem .img {
+        width: 282px;
+
+        height: 256px;
+        margin-left: -13px;
+    }
+
+    .header {
+
+        height: 123px;
+    }
+
+    .heads {
+        text-align: center;
+        padding: 0;
+        transform: translate(0px, -31px);
+    }
+
+
+    .iconns {
+        width: 78%;
+        overflow: hidden;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    .footer {
+
+        width: auto;
+        height: auto;
+    }
+
+
+
+    .foot-text1 ul {
+
+        display: none;
+    }
+
+    .foot-text1 {
+        padding: 0;
+        display: none;
+
+    }
+
+   
+
+    .foot-text ul {
+
+        display: none;
+    }
+
+
+    .subbox1 {
+        font-size: 12px;
+        white-space: pre;
+        text-align: center;
+    }
+
+    .list-item li {
+        height: 20px;
+        transform: translate(-8px, 27px);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .last-fot {
+        display: block;
+
+    }
+    .hed h2{
+        padding: 20px;
+    }
+    .foot-last {
+        padding: 19px;
+        display: block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <div class="bog-outer">
+
+   
+    <div class="outer">
+
+    <div class="header">
+        <img src="Airbnb-logo.png" alt="" class="logos">
+       
+        <ul class="list-item">
+            <li>Stays</li>
+            <li>Experience</li>
+            <li>Online Experience</li>
+        </ul>
+
+
+<div class="hs">
+
+    <div class="boxsg">
+       <div class="subbox1">where
+        Search destination
+       </div>
+       <div class="subbox1">Check in
+        Add dates
+       </div>
+       <div class="subbox1">where
+        Search destination</div>
+       <div class="subbox1">Who
+         Add guets</div>
+    </div>
+</div>
+</div>
+        <div class="btns">
+<p>Airbnb your name</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="iconns">
+<div class="iic">
+    <img src="star.webp" alt="" class="src">
+    <div class="words">
+        <span>
+            Icons
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="icon2.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Amezing Pool
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="star2.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Amezing view
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="stra3.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Farms
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="star4.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Caves
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="star5.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Luxe
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="star6.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Lakefront
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="star7.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Cabins
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="cabins.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Breachfront
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="omg.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            OMG!
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="castle.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Castle!
+        </span>
+    </div>
+   
+</div>
+
+<div class="iic">
+    <img src="beachfort.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Top the World
+        </span>
+    </div>
+   
+</div>
+<div class="iic">
+    <img src="worl.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Treehouse
+        </span>
+    </div>
+   
+</div>
+<div class="iic">
+    <img src="treehouse.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+            Treehouse
+        </span>
+    </div>
+   
+</div>
+<div class="iic">
+    <img src="breakfast.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+           Breakfast
+        </span>
+    </div>
+   
+</div>
+<div class="iic">
+    <img src="countryside.jpg" alt="" class="src">
+    <div class="words">
+        <span>
+          Countryside
+        </span>
+    </div>
+   
+</div>
+
+    </div>
+    <div class="flexparent">
+        <div class="flexitem">
+            <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+            <div class="btn">
+                <button class="live">
+                    Live
+                </button>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            <div class="text">
+                <h4>Make core memories </h4>
+                <p>Hosted by joy
+                    <br>
+                    Comin june
+                </p>
+             
+            </div>
+        </div>
+
+        <div class="flexitem">
+            <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+            <div class="btn">
+                <button class="live">
+                    Live
+                </button>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            <div class="text">
+                <h4>Make core memories </h4>
+                <p>Hosted by joy
+                    <br>
+                    Comin june
+                </p>
+             
+            </div>
+        </div>
+
+        <div class="flexitem">
+            <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+            <div class="btn">
+                <button class="live">
+                    Live
+                </button>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            <div class="text">
+                <h4>Make core memories </h4>
+                <p>Hosted by joy
+                    <br>
+                    Comin june
+                </p>
+             
+            </div>
+        </div>
+
+        <div class="flexitem">
+            <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+            <div class="btn">
+                <button class="live">
+                    Live
+                </button>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            <div class="text">
+                <h4>Make core memories </h4>
+                <p>Hosted by joy
+                    <br>
+                    Comin june
+                </p>
+             
+            </div>
+        </div>
+
+        <div class="flexitem">
+            <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+            <div class="btn">
+                <button class="live">
+                    Live
+                </button>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            <div class="text">
+                <h4>Make core memories </h4>
+                <p>Hosted by joy
+                    <br>
+                    Comin june
+                </p>
+             
+            </div>
+        </div>
+
+        <div class="flexitem">
+            <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+            <div class="btn">
+                <button class="live">
+                    Live
+                </button>
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            <div class="text">
+                <h4>Make core memories </h4>
+                <p>Hosted by joy
+                    <br>
+                    Comin june
+                </p>
+             
+            </div>
+        </div>
+      
+    </div>
+
+
+   <div class="twoflex-container">
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+         
+        </div>
+    </div>
+
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>hjhjk hhjjhjhjh hjhhjhj </h4>
+            <p>hgjhhj jhghhj uygyyiui iuuiuy iutyu iu</p>
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+         
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+         
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+         
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+         
+        </div>
+    </div>
+   </div>
+
+   
+<div class="heads">
+<h2>Past experiences</h2>
+</div>
+   
+<div class="twoflex-container1">
+    <div class="flexitem">
+        <img src="sieuwert-otterloo-aren8nutd1Q-unsplash.jpg" alt="" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+
+    <div class="flexitem">
+        <img src="r-architecture-2gDwlIim3Uw-unsplash.jpg" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="r-architecture-2gDwlIim3Uw-unsplash.jpg" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="r-architecture-2gDwlIim3Uw-unsplash.jpg" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="r-architecture-2gDwlIim3Uw-unsplash.jpg" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+    <div class="flexitem">
+        <img src="r-architecture-2gDwlIim3Uw-unsplash.jpg" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+   </div>
+
+
+   <div class="twoflex-container2">
+    <div class="flexitem">
+        <img src="r-architecture-2gDwlIim3Uw-unsplash.jpg" class="img">
+        <div class="btn">
+            <button class="live">
+                Live
+            </button>
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+              </svg>
+        </div>
+        <div class="text">
+            <h4>Make core memories </h4>
+            <p>Hosted by joy
+                <br>
+                Comin june
+            </p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="footer">
+
+
+        <div class="hed">
+<h2>Inspiration for future getaways</h2>
+        </div>
+<div class="foot-text">
+<ul>
+    <li>Popular
+      </li>
+
+      <li>Popular
+    </li>
+    <li>Popular
+    </li>
+    <li>Popular
+    </li>
+    <li>Popular
+    </li>
+    <li>Popular
+    </li>
+    <li>Popular
+    </li>
+    <li>Popular
+    </li>
+
+</ul>
+
+</div>
+
+
+<div class="foot-text1">
+    <ul>
+        <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+      
+          <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+
+          <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+
+          <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+
+          <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+
+          <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+
+          <li><a href="" class="href"></a>
+            <span class="airb">Phonix</span>
+          <span class="arbnb">&nbsp;</span>
+          <span class="airb1">Villa Rentals</span>
+          </li>
+          
+      
+    </ul>
+    </div>
+
+
+
+
+    <hr>
+
+    <div class="last-fot">
+        <div class="support">
+support
+<ul><li>
+    Help Center
+</li>
+<li>
+    Help Center
+</li>
+<li>
+    Help Center
+</li>
+<li>
+    Help Center
+</li>
+<li>
+    Help Center
+</li>
+<li>
+    Help Center
+</li>
+</ul>
+        </div>
+
+        <div class="support">
+            support
+            <ul><li>
+                Help Center
+            </li>
+            <li>
+                Help Center
+            </li>
+            <li>
+                Help Center
+            </li>
+            <li>
+                Help Center
+            </li>
+            <li>
+                Help Center
+            </li>
+            <li>
+                Help Center
+            </li>
+            </ul>
+                    </div>
+
+                    <div class="support">
+                        support
+                        <ul><li>
+                            Help Center
+                        </li>
+                        <li>
+                            Help Center
+                        </li>
+                        <li>
+                            Help Center
+                        </li>
+                        <a href="" class="href"> Help Center<li></a>
+                           
+                        </li>
+                        <li>
+                            Help Center
+                        </li>
+                        <li>
+                            Help Center
+                        </li>
+                        </ul>
+
+
+                                </div>
+
+                                
+    </div>
+    <hr style="width: 62%;">
+    <div class="foot-last">
+        <div class="foo-tet">
+            <p>c 2024 Airbnb, Inc .privacy . Teams Sitemap. Company details</p>
+        </div>
+
+        <div class="foo-tet">
+            <p>English(IN)   English(IN) (INR)</p>
+        </div>
+    </div>
+    </div>
+
+    
+</div>
+
+
+</body>
+
+</html>
